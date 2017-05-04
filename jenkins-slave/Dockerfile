@@ -3,7 +3,7 @@ FROM registry.access.redhat.com/rhel7/rhel
 ENV JENKINS_SWARM_VERSION 2.2
 ENV JNLP_SLAVE_VERSION 3.5
 ENV HOME /opt/jenkins-slave
-ENV MAVEN_VERSION 3.3.8
+ENV MAVEN_VERSION 3.3.9
 ENV JAVA_HOME /usr/lib/jvm/java
 
 RUN yum install -y git tar zip unzip which java-1.8.0-openjdk-devel && \
