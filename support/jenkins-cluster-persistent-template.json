@@ -441,7 +441,7 @@
         {
             "name": "JENKINS_PASSWORD",
             "description": "Password for the Jenkins user",
-            "value": "ram28sha",
+            "value": "welcome",
             "generate": "expression"
         },
         {
