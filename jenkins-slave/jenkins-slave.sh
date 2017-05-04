@@ -36,9 +36,9 @@ elif [[ $# -lt 1 ]] || [[ "$1" == "-"* ]]; then
 #	PARAMS="-master http://${JENKINS_SERVICE_HOST}:${JENKINS_SERVICE_PORT}${JENKINS_CONTEXT_PATH} -tunnel ${JENKINS_SLAVE_SERVICE_HOST}:${JENKINS_SLAVE_SERVICE_PORT}${JENKINS_SLAVE_CONTEXT_PATH} -username ${master_username} -password ${master_password} -executors ${slave_executors}"
   #fi
   
-  exec java -jar slave.jar -jnlpUrl http://52.214.246.1:8080/computer/209.132.178.161/slave-agent.jnlp -secret 34f748a54e49678dcaad89711a1f597d1b41ecd94ef8a34f0202813c76a7d8c8
+  PARAMS="-master -jnlpUrl http://52.214.246.1:8080/computer/209.132.178.161/slave-agent.jnlp -secret 34f748a54e49678dcaad89711a1f597d1b41ecd94ef8a34f0202813c76a7d8c8"
 
   echo Running java $JAVA_OPTS -jar $JAR -fsroot $HOME $PARAMS "$@"
-  #exec java $JAVA_OPTS -jar $JAR -fsroot $HOME $PARAMS "$@"
+  exec java $JAVA_OPTS -jar $JAR -fsroot $HOME $PARAMS "$@"
 
 fi
