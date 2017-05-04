@@ -47,7 +47,7 @@
 		        "name": "ose-jenkins"
 		    },
 			"spec": {
-				"dockerImageRepository": "registry.access.redhat.com/openshift3/jenkins-1-rhel7"
+				"dockerImageRepository": "registry.access.redhat.com/openshift3/jenkins-2-rhel7"
 			}
 		},
         {
@@ -441,7 +441,7 @@
         {
             "name": "JENKINS_PASSWORD",
             "description": "Password for the Jenkins user",
-            "value": "password",
+            "value": "ram28sha",
             "generate": "expression"
         },
         {
@@ -452,12 +452,12 @@
         {
             "name": "JENKINS_IMAGE_TAG",
             "description": "Base OpenShift Jenkins Image Tag",
-            "value": "ose-jenkins:1.609-15"
+            "value": ""
         },
         {
             "name": "GIT_URI",
             "description": "Git Repository",
-            "value": "https://github.com/sabre1041/ose-jenkins-cluster.git"
+            "value": "https://github.com/ram4ibm/ose-jenkins-cluster.git"
         },
         {
             "name": "GIT_REF",
